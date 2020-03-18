@@ -1,0 +1,12 @@
+DROP SCHEMA IF EXISTS `oddsproject`;
+
+CREATE SCHEMA `oddsproject`;
+USE `oddsproject` ;
+
+CREATE TABLE IF NOT EXISTS `oddsproject`.`odds` (
+  `betid` BIGINT(20) NOT NULL AUTO_INCREMENT,
+  `userid` VARCHAR(255) NULL DEFAULT NULL,
+  `odds` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`betid`))
+ENGINE=InnoDB
+AUTO_INCREMENT = 1;
